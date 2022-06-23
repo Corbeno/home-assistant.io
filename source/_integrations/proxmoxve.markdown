@@ -109,6 +109,12 @@ The integration will automatically create a binary sensor for each tracked virtu
 
 The created sensor will be called `binary_sensor.NODE_NAME_VMNAME_running`.
 
+## Sensor
+
+The integration will automatically create sensors for each virtual machine or container. The sensors are as follows:
+
+1. The currently used memory in GiB named sensor.proxmox_NODE_NAME_DEV_ID_mem_gib
+
 ## Proxmox Permissions
 
 To be able to retrieve the status of VMs and containers, the user used to connect must minimally have the `VM.Audit` privilege. Below is a guide to how to configure a new user with the minimum required permissions.
